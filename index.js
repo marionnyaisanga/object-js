@@ -1,8 +1,7 @@
-// Create a User object with properties like name, stepsWalked (an array of daily steps), and a method totalSteps() that calculates and
-//  returns the total number of steps walked. Add another method averageSteps() that returns the average steps per day.
-
+// 1
 // create name and steps wlked each day
-// calculate totall steps
+// add steps for each day
+// divide total steps with the total days to get average steps.
 
 
 
@@ -22,9 +21,11 @@ console.log(user.averageSteps());
 
 
 
-// Create a Recipe constructor with name, ingredients (array), and 
-// cookTime in minutes. Add a method displayRecipe() that logs the name and all 
-// ingredients in a readable list, and another method isQuickMeal() that returns true if cookTime is 30 minutes or less.
+// 2.
+// create a constractor with the properties of Recipe
+// create a function that displays name and ingredients
+// create a function that checks if the cooking time is less than 30 min to return true for quick meal
+
 function Recipe(name, ingredients,cookTime){
     this.name =name;
     this.ingredients= ingredients;
@@ -46,8 +47,10 @@ console.log(food.displayRecipe())
 
 
 
-// Create a Car object with properties like model, mileage, and serviceHistory (an array of service dates). Add a method addService(date) 
-// to add a new service record, and lastServiceDate() to return the most recent service date.
+// 3.
+// create object car with its properties(model, mileage,serviceHistory)
+// create a function to add service record
+// create a function that returns the last date in the array.
 const car = {
     model : 'Toyota',
     mileage: 20000,
@@ -69,9 +72,11 @@ const car = {
 console.log(car.addService('4th April 2021'));
 console.log(car.lastService());
 
+// 4.
+// create an object for song playist with properties.
+// create a function that adds a song to the array.
+// create a function to return all the elements in the playlist
 
-// Create a Playlist object with a property songs (an array of song titles). Add methods addSong(title) to add a song,
-//  removeSong(title) to delete one, and listSongs() to log all songs currently in the playlist.
 
 const playlist ={
     songs : ['Vertigo', 'Mpishi','Happy'],
@@ -92,9 +97,11 @@ console.log(playlist.removeSong());
 console.log(playlist.listSongs());
 
 
-// Create a Course constructor with title, lessons (an array), and completedLessons (array). Add a method markComplete(lesson) 
-// that adds the lesson to completedLessons, and a method getProgress() that returns a string like "3 out of 5 lessons completed"
 
+// 5.
+// create a cou constructor with properties for cources
+// create a function that adds a lesson to the array
+// create a function that returns  number of lessons completed out of the number of lessons 
 function Course( title, lessons, completedLessons){
     this.title= title;
     this.lessons = lessons;
